@@ -1,0 +1,151 @@
+.bg{
+    background-image: url(images/blog-bg.jpg);
+    position: relative;
+    z-index: 1;
+    height: 470px;
+    margin-bottom: 100px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+.bg::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0 ;
+    left: 0;
+    z-index: -1;  
+    background-image: linear-gradient(120deg, #505add 0%,  #df42b1 100%);
+    opacity: 0.9;
+}
+
+
+.blog-content {
+    position: relative;
+    z-index: 1;
+    margin-top: 200px;
+    background: transparent;
+}
+
+.page-title{
+    color: white;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.blog-item{
+    list-style: none;
+}
+ .blog-item a{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.blog-item-active{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    margin-left: 79px;
+margin-top: -28px;
+}
+
+/* blog area  */
+
+
+.single-blog-area{
+    margin-bottom: 85px;
+    overflow: hidden;
+    box-shadow: 0px 8px 27px 0px rgba(90, 111,120, 0.15);
+}
+
+ .single-blog img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    transition-duration: 800ms;
+ }
+
+ .single-blog-area:hover img{
+    transform: scale(1.2);
+ }
+
+  .single-blog-text {
+    background-color: #ffffff;
+    padding: 30px 30px 50px 30px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.section-heading{
+    margin-top: 89px;
+    margin-bottom: 53px;
+}
+
+
+.blog-title{
+font-size: 20px;
+    font-weight: 600;
+    color:#111343;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.blog-title:hover,.blog-date:hover,.blog-author:hover{
+color: #df42b1;
+text-decoration: none;
+}
+
+
+.post-date{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.post-date a{
+
+    color: #9293bc;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px;
+    outline: none;
+}
+
+.blog-btn{
+    text-align: center;
+}
+
+.blog-btn a {
+    height: 51px;
+    width: 51px;
+    background-image: linear-gradient(120deg, #df42b1 0%, #505add 100%);
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    line-height: 47px;
+    color: #ffffff;
+    font-size: 25px;
+    display: inline-block;
+
+}
+
+.single-blog-text p{
+    font-family: "Poppins", sans-serif;
+
+    color: #5d5e8d;
+    margin-top: 23px;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+@media only screen and (max-width: 991px) { 
+  .about{margin-top: unset;}
+}
